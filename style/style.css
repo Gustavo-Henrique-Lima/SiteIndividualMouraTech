@@ -1,4 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
 *{
+    font-family: "Roboto", sans-serif;
     margin: 0;
 }
 #nav-bar
@@ -29,7 +32,44 @@
     object-fit: contain;
     margin-right: 1rem;
 }
-
+.intro
+{
+    color:black;
+    height: 50vh;
+    width: 100vw;
+    position: relative;
+    overflow: hidden;
+}
+.intro h1 {
+    margin-top: 4rem;
+    margin-left: 30%;
+    position: relative;
+    z-index: 2;
+    font-size: 40px;
+}
+.intro pre {
+    margin-left: 27%;
+    position: relative;
+    z-index: 2;
+    font-size: 25px;
+}
+.intro img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    opacity: 0.2;
+}
+.color1{
+    color: rgb(248, 11, 11);
+}
+.color2{
+    color: rgb(45, 32, 235);
+}
+.color3{
+    color: rgb(253, 122, 0);
+}
 @media (max-width: 500px)
 {
     .opcoes
@@ -38,7 +78,7 @@
     }
     #nav-bar
     {
-            height: 12vh;
+            height: 15vh;
     }
     .menu
     {
@@ -46,36 +86,12 @@
         width: 7rem;
         height: 100%;
     }
-}
-.teste p{
-    font-family: monospace;
-    font-size: 32px;
-    border-right: 1px solid;
-    width: 10ch;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: digitando 2s steps(10),piscando 0.5s;
-}
-.p1 p{
-    font-family: monospace;
-    font-size: 32px;
-    color: red;
-    border-right: 1px solid;
-    width: 32ch;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: digitando 2s steps(32),piscando 0.5s;
-}
-@keyframes digitando {
-    from
-    {
-        width: 0;
+    .intro h1 {
+        margin-left: 16%;
+        font-size: 25px;
     }
-}
-
-@keyframes piscando {
-   50%
-   {
-    border-color: transparent;
-   }
+    .intro pre {
+        margin: 0;
+        font-size: 18px;
+    }
 }
