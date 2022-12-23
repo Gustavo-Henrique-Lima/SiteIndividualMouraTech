@@ -3,7 +3,9 @@
 *{
     font-family: "Roboto", sans-serif;
     margin: 0;
+    overflow-x: hidden;
 }
+
 #nav-bar
 {
     background-color: black;
@@ -16,6 +18,11 @@
 #nav-bar img{
     margin-left: 1rem;
     object-fit: contain;
+}
+#nav-bar a{
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    color: white;
 }
 .opcoes
 {
@@ -61,6 +68,77 @@
     height: auto;
     opacity: 0.2;
 }
+#html{
+    object-fit: contain;
+    background-color: rgb(248, 11, 11);
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+}
+#html img {
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    height: 40vh;
+    width: 40vw;
+    object-fit: contain;
+}
+#html p{
+    margin-top: 2rem;
+}
+#css{
+    object-fit: contain;
+    background-color: rgb(45, 32, 235);
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+}
+#css img {
+    margin-top: 1rem;
+    height: 40vh;
+    width: 40vw;
+    object-fit: contain;
+}
+#css p{
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+#js{
+    object-fit: contain;
+    height: 50vh;
+    background-color: rgb(253, 122, 0);
+    width: 100vw;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+}
+#js img {
+    margin-top: 1rem;
+    height: 40vh;
+    width: 40vw;
+    object-fit: contain;
+}
+#js p{
+    margin-top: 2rem;
+}
+#rodape
+{
+    background-color: black;
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    color: white;
+}
+#rodape p{
+    margin-top: 1rem;
+}
+#icons
+{
+    display: flex;
+    justify-items: flex-start;
+}
 .color1{
     color: rgb(248, 11, 11);
 }
@@ -78,13 +156,16 @@
     }
     #nav-bar
     {
-            height: 15vh;
+        height: 15vh;
     }
     .menu
     {
         display: block;
         width: 7rem;
         height: 100%;
+    }
+    .intro{
+        height: 35vh;
     }
     .intro h1 {
         margin-left: 16%;
@@ -93,5 +174,73 @@
     .intro pre {
         margin: 0;
         font-size: 18px;
+    }
+    #html
+    {
+        align-items: center;
+        display: block;
+    }
+    #html img
+    {
+        margin-left: 8%;
+        height: 30vh;
+        width: 80vw;
+    }
+    #html p
+    {
+        margin-left: 1rem;
+    }
+    #css
+    {
+        align-items: center;
+        display: block;
+    }
+    #css img
+    {
+        margin-left: 8%;
+        height: 30vh;
+        width: 80vw;
+    }
+    #css p
+    {
+        margin-left: 1rem;
+    }
+    #js
+    {
+        align-items: center;
+        display: block;
+    }
+    #js img
+    {
+        margin-left: 8%;
+        height: 30vh;
+        width: 80vw;
+    }
+    #js p
+    {
+        margin-left: 1rem;
+    }
+    #rodape
+    {
+        align-items: center;
+        display: block;
+    }
+}
+@media (max-width: 450px)
+{
+    .intro{
+        height: 30vh;
+    }
+}
+@media (max-width: 375px)
+{
+    .intro{
+        height: 35vh;
+    }
+}
+@media (max-width: 360px)
+{
+    .intro{
+        height: 32vh;
     }
 }
