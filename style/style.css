@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+}
+#nav-bar
+{
+    background-color: black;
+    height: 15vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+#nav-bar img{
+    margin-left: 1rem;
+    object-fit: contain;
+}
+.opcoes
+{
+    width: 30rem;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;   
+}
+.menu
+{
+    display: none;
+    align-items: center;
+    margin-top: 1rem;
+    object-fit: contain;
+    margin-right: 1rem;
+}
+
+@media (max-width: 500px)
+{
+    .opcoes
+    {
+        display: none;
+    }
+    #nav-bar
+    {
+            height: 12vh;
+    }
+    .menu
+    {
+        display: block;
+        width: 7rem;
+        height: 100%;
+    }
+}
+.teste p{
+    font-family: monospace;
+    font-size: 32px;
+    border-right: 1px solid;
+    width: 10ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: digitando 2s steps(10),piscando 0.5s;
+}
+.p1 p{
+    font-family: monospace;
+    font-size: 32px;
+    color: red;
+    border-right: 1px solid;
+    width: 32ch;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: digitando 2s steps(32),piscando 0.5s;
+}
+@keyframes digitando {
+    from
+    {
+        width: 0;
+    }
+}
+
+@keyframes piscando {
+   50%
+   {
+    border-color: transparent;
+   }
+}
