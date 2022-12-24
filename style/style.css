@@ -84,7 +84,9 @@
     object-fit: contain;
 }
 #html p{
-    margin-top: 2rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
+    font-size: 16px;
 }
 #css{
     object-fit: contain;
@@ -101,7 +103,7 @@
     object-fit: contain;
 }
 #css p{
-    margin-top: 2rem;
+    margin-top: 5rem;
     margin-left: 2rem;
 }
 #js{
@@ -120,7 +122,8 @@
     object-fit: contain;
 }
 #js p{
-    margin-top: 2rem;
+    margin-top: 5rem;
+    margin-right: 2rem;
 }
 #rodape
 {
@@ -179,6 +182,8 @@
     {
         align-items: center;
         display: block;
+        height: 90vh;
+        width: 100vw;
     }
     #html img
     {
@@ -189,11 +194,14 @@
     #html p
     {
         margin-left: 1rem;
+        font-size: 16px;
     }
     #css
     {
         align-items: center;
         display: block;
+        height: 90vh;
+        width: 100vw;
     }
     #css img
     {
@@ -204,11 +212,14 @@
     #css p
     {
         margin-left: 1rem;
+        font-size: 16px;
     }
     #js
     {
         align-items: center;
         display: block;
+        height: 90vh;
+        width: 100vw;
     }
     #js img
     {
@@ -219,6 +230,7 @@
     #js p
     {
         margin-left: 1rem;
+        font-size: 16px;
     }
     #rodape
     {
@@ -237,10 +249,52 @@
     .intro{
         height: 35vh;
     }
+    #html
+    {
+        align-items: center;
+        display: block;
+        height: 100vh;
+        width: 100vw;
+    }
+    #css
+    {
+        align-items: center;
+        display: block;
+        height: 100vh;
+        width: 100vw;
+    }
+    #js
+    {
+        align-items: center;
+        display: block;
+        height: 100vh;
+        width: 100vw;
+    }
 }
 @media (max-width: 360px)
 {
     .intro{
         height: 32vh;
+    }
+    #html
+    {
+        align-items: center;
+        display: block;
+        height: 95vh;
+        width: 100vw;
+    }
+    #css
+    {
+        align-items: center;
+        display: block;
+        height: 95vh;
+        width: 100vw;
+    }
+    #js
+    {
+        align-items: center;
+        display: block;
+        height: 95vh;
+        width: 100vw;
     }
 }
